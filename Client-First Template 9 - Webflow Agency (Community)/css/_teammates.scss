@@ -1,0 +1,134 @@
+.teammates {
+    padding: 128px 0;
+    background: var(--Grey, #F4F6FC);
+}
+
+.teammates__title {
+    margin-bottom: 48px;
+    color: var(--Dark-blue, #282938);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px;
+
+    @media screen and (max-width:396px) {
+        font-size: 30px;
+        line-height: 50px;
+    }
+}
+
+.teammates__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (max-width:1225px) {
+        justify-content: center;
+        gap: 50px;
+    }
+}
+
+.teammates__card {
+    background: #FFF;
+    padding: 48px 64px 34px;
+
+    @media screen and (max-width:312px) {
+       width: 250px;
+       padding: 28px;
+    }
+}
+
+.teammates__card__header__3 {
+    background: url(../img/paul.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 168px;
+    width: 168px;
+    position: relative;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.teammates__card__header__3:hover .socials__teamworker{
+    display: flex;
+}
+
+.teammates__card__header__3:hover{
+    background: linear-gradient(348deg, #4b39c3 17.97%, rgba(167, 155, 155, 0) 75%),url(../img/paul.png);
+}
+
+.teammates__card__header__2 {
+    background:  url(../img/simon.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 168px;
+    width: 168px;
+    position: relative;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.teammates__card__header__2:hover .socials__teamworker{
+    display: flex;
+}
+
+.teammates__card__header__2:hover{
+    background: linear-gradient(348deg, #4b39c3 17.97%, rgba(167, 155, 155, 0) 75%),url(../img/simon.png);
+}
+
+.teammates__card__header__4 {
+    background:  url(../img/sara.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 168px;
+    width: 168px;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.teammates__card__header__4:hover .socials__teamworker{
+    display: flex;
+}
+
+.teammates__card__header__4:hover{
+    background: linear-gradient(348deg, #4b39c3 17.97%, rgba(167, 155, 155, 0) 75%),url(../img/sara.png);
+}
+
+
+.socials__teamworker{
+    position: absolute;
+    gap: 11.25px;
+    bottom: 20px;
+    left: 45px;
+    display: none;
+    transition: 0.4s linear ease-in;
+    
+}
+.teammates__card_title {
+    margin-top: 30px;
+    margin-bottom: 2px;
+    color: var(--b, #1D2130);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.teamworker__job {
+    color: var(--b, #1D2130);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+}

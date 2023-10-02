@@ -1,0 +1,176 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    background-color: #1C1E53;
+
+    @media screen and (max-width:745px) {
+       position: fixed;
+       top: 0;
+        width: 100%;
+        z-index: 99999999;
+        background-color: #1C1E53;
+    }
+
+    .navbar__logo img {
+        @media screen and (max-width:301px) {
+            width: 100px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        #check {
+            display: none;
+        }
+
+        .toogle {
+            font-size: 30px;
+            color: #FFF;
+            display: none;
+
+            @media screen and (max-width:301px) {
+                font-size: 25px;
+            }
+
+            .list {
+                position: relative;
+                right: -5px;
+            }
+
+            @media screen and (max-width:745px) {
+                display: block;
+            }
+        }
+
+        #check:checked~.navbar__menu {
+            right: 0;
+        }
+
+        .navbar__menu {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+
+            @media screen and (max-width:890px) {
+                gap: 20px;
+            }
+
+            @media screen and (max-width:745px) {
+                position: fixed;
+                right: -100%;
+                top: 0;
+                flex-direction: column;
+                justify-content: stretch;
+                align-items: flex-end;
+                padding-right: 50px;
+                text-align: justify;
+                width: 45%;
+                margin-top: 92px;
+                padding-top: 20px;
+                height: calc(760px - 92px);
+                background-color: #1C1E53;
+                z-index: -1;
+                box-shadow: -2px -2px 10px #2c2c4d;
+                border-bottom-left-radius: 30px;
+                transition: 0.5s;
+            }
+
+            @media screen and (max-width:480px) {
+                height: 400px;
+            }
+
+            li {
+                color: #BBBBCB;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px;
+            }
+
+            .navbar__menu a {
+                width: 82%;
+
+                @media screen and (max-width:745px) {
+                    border-bottom: 1px solid #BBBBCB;
+                    text-align: right;
+                }
+            }
+
+            .active {
+                color: #FFF;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px;
+
+                @media screen and (max-width:745px) {
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+
+
+
+        .navbar__menu__btn {
+            margin-left: 16px;
+            padding: 16px 48px;
+            border-radius: 41px;
+            border: 2px solid rgba(244, 246, 252, 0.20);
+            background: none;
+            color: var(--White, #FFF);
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+            cursor: pointer;
+
+            @media screen and (max-width:890px) {
+                padding: 10px 24px;
+                margin-left: 10px;
+            }
+
+            @media screen and (max-width:745px) {
+                display: none;
+            }
+        }
+
+        .navbar__menu__btn:active {
+            opacity: 0.7;
+            transform: scale(0.9);
+        }
+
+        .navbar__menu__btn__2 {
+            display: none;
+            padding: 10px 20px;
+            border-radius: 41px;
+            border: 2px solid rgba(244, 246, 252, 0.20);
+            background: none;
+            color: var(--White, #FFF);
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+            cursor: pointer;
+            position: relative;
+            top: -5px;
+
+            @media screen and (max-width:745px) {
+                display: inline-block;
+            }
+
+            @media screen and (max-width:332px) {
+                padding: 5px 10px;
+                font-size: 14px;
+            }
+        }
+    }
+}

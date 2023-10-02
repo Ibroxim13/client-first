@@ -1,0 +1,288 @@
+.pricing__content {
+    padding: 128px 0 0;
+}
+
+.pricing__title {
+    color: var(--Dark-blue, #282938);
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px;
+    text-align: center;
+    margin-bottom: 16px;
+
+    @media screen and (max-width:602px) {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    @media screen and (max-width:392px) {
+        font-size: 25px;
+        line-height: 40px;
+    }
+}
+
+.pricing__text {
+    color: var(--Dark-blue, #282938);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    padding-bottom: 64px;
+    width: 562px;
+    margin: 0 auto;
+
+    @media screen and (max-width:602px) {
+        width: 350px;
+    }
+
+    @media screen and (max-width:392px) {
+        width: 260px;
+    }
+}
+
+.pricing__row {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+
+    @media screen and (max-width:1273px) {
+        justify-content: center;
+    }
+}
+
+.pricing__card {
+    border-radius: 12px;
+    background: var(--Grey, #F4F6FC);
+    width: 390px;
+    padding: 63px 76px 76px 48px;
+    position: relative;
+    transition: 0.4s;
+    overflow: hidden;
+
+    @media screen and (max-width:420px) {
+        padding: 40px;
+    }
+}
+
+.pricing__card:hover {
+    background:  #1C1E53;
+}
+
+.ellipse__hover{
+    position: absolute;
+    left: -130px;
+    top: -40px;
+    width: 651px;
+    height: 651px;
+
+    @media screen and (max-width:420px) {
+       height: 450px;
+     }
+}
+
+.pricing__card__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width:420px) {
+       margin-bottom: 15px;
+    }
+}
+
+.price__page {
+    color: var(--Dark-blue, #282938);
+    font-family: Poppins;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    transition: 0.4s;
+
+    @media screen and (max-width:420px) {
+       font-size: 25px;
+       line-height: 35px;
+    }
+}
+
+.pricing__card:hover .price__page {
+    color: var(--White, #FFF);
+}
+
+.pricing__name {
+    color: var(--Royal-Blue, #2405F2);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    transition: 0.4s;
+
+    @media screen and (max-width:420px) {
+        font-size: 14px;
+    }
+}
+
+.pricing__card:hover .pricing__name {
+    color: var(--Yellow, #FCD980);
+}
+
+.pricing__card__title {
+    color: var(--Dark-blue, #282938);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    margin-bottom: 8px;
+    transition: 0.4s;
+
+    @media screen and (max-width:420px) {
+        margin-bottom: 4px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+.pricing__card:hover .pricing__card__title {
+    color: var(--White, #FFF);
+}
+
+.pricing__card__text {
+    color: var(--Dark-blue, #282938);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 80px;
+    transition: 0.4s;
+
+    @media screen and (max-width:420px) {
+       margin-bottom: 50px;
+       font-size: 14px;
+    }
+}
+
+
+.pricing__card:hover .pricing__card__text {
+    color: var(--White, #FFF);
+}
+
+.pricing__card__text__2{
+    color: var(--Dark-blue, #282938);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 52px;
+    transition: 0.4s;
+
+    @media screen and (max-width:420px) {
+        margin-bottom: 50px;
+        font-size: 14px;
+     }
+}
+.pricing__card:hover .pricing__card__text__2 {
+    color: var(--White, #FFF);
+}
+
+.pricing__card__text__3{
+    color: var(--Dark-blue, #282938);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 30px;
+    transition: 0.4s;
+
+    @media screen and (max-width:420px) {
+        margin-bottom: 50px;
+        font-size: 14px;
+     }
+}
+
+.pricing__card:hover .pricing__card__text__3 {
+    color: var(--White, #FFF);
+}
+
+.pricing__benefits__menu {
+    margin-bottom: 52px;
+
+    @media screen and (max-width:420px) {
+       margin-bottom: 30px;
+    }
+}
+
+.pricing__benefits__row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 22px;
+
+    @media screen and (max-width:420px) {
+        margin-bottom: 14px;
+    }
+}
+
+.benefits__names {
+    color: var(--Dark-blue, #282938);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    transition: 0.4s;
+    line-height: 28px;
+}
+
+.pricing__card:hover .benefits__names {
+    color: var(--White, #FFF);
+}
+
+.grey__benefits {
+    opacity: 0.7;
+    transition: 0.4s;
+}
+
+.pricing__card:hover .grey__benefits {
+    color: var(--White, #FFF);
+}
+
+.pricing__card__btn {
+    padding: 15px 51px;
+    border: 0;
+    outline: 0;
+    border-radius: 41px;
+    background: var(--Dark-blue, #282938);
+    color: var(--Grey, #F4F6FC);
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.4s;
+
+    @media screen and (max-width:420px) {
+        padding: 12px 40px;
+        font-size: 16px;
+    }
+}
+
+.pricing__card__btn:active {
+    opacity: 0.7;
+}
+
+.pricing__card:hover .pricing__card__btn {
+    color: var(--White, #FFF);
+    background: var(--Yellow, #FCD980);
+}
